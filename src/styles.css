@@ -348,6 +348,7 @@ main { flex: 1; }
 .fact { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule-strong); }
 .fact dt { font-size: 11px; letter-spacing: 0.26em; color: var(--burgundy); padding-top: 3px; }
 .fact dd { margin: 0; font-size: 16px; text-align: right; }
+.fact dd a:hover { color: var(--burgundy); }
 
 /* ---------- Footer ---------- */
 .footer {

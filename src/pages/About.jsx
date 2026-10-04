@@ -1,5 +1,6 @@
 import EmailPanel from '../components/EmailPanel.jsx';
 import Portrait from '../components/Portrait.jsx';
+import { LINKEDIN } from '../constants.js';
 
 export default function About() {
   return (
@@ -30,6 +31,12 @@ export default function About() {
             <div className="fact">
               <dt>EDUCATION</dt>
               <dd>B.S. Computer Science, UC Riverside</dd>
+            </div>
+            <div className="fact">
+              <dt>LINKEDIN</dt>
+              <dd>
+                <a href={LINKEDIN} target="_blank" rel="noopener noreferrer">linkedin.com/in/salmakahmed</a>
+              </dd>
             </div>
           </dl>
         </div>
