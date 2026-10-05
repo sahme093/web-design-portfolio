@@ -6,6 +6,19 @@ import Home from './pages/Home.jsx';
 import Services from './pages/Services.jsx';
 import About from './pages/About.jsx';
 
+const TITLES = {
+  '/services': 'Services · Salma Korashy Web Design',
+  '/about': 'About · Salma Korashy Web Design',
+};
+
+function PageTitle() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    document.title = TITLES[pathname] ?? 'Salma Korashy Web Design';
+  }, [pathname]);
+  return null;
+}
+
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
@@ -22,6 +35,7 @@ export default function App() {
   return (
     <div className="site">
       <ScrollToTop />
+      <PageTitle />
       <Header />
       <main>
         <Routes>
